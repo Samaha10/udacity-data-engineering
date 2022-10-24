@@ -128,7 +128,7 @@ songplay_table_insert = ("""INSERT INTO songplay_table (start_time,
     s.song_id, s.artist_id, 
     e.sessionId, e.location, e.userAgent
     FROM staging_events_table e, staging_songs_table s 
-    WHERE e.song = s.title AND e.artist = s.artist_name AND e.page = 'NextSong' ; 
+    WHERE e.song = s.title AND e.artist = s.artist_name AND e.length = s.duration AND  e.page = 'NextSong' ; 
 """)
 
 
