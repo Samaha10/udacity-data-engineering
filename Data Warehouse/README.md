@@ -7,9 +7,9 @@ This project covers a use case for **Sparkify** startup. By data modeling with P
 For the five tables, Schema follows a star schema with a fact table (songplays) for records in log data associated with song plays and Dimension tables for users of the app (users table), songs in library (songs), artists in library (artists) and timestamps of records in songplays broken down into specific units (time)
 
 ## How to run 
-> python create_tables.py    # runs script for creating the tables
+python create_tables.py    # runs script for creating the tables
 
-> python etl.py              # runs script for the etl pipeline
+python etl.py              # runs script for the etl pipeline
 
 
 ## files in repo
