@@ -6,7 +6,7 @@ This project covers a use case for **Sparkify** startup. By data modeling with P
 > ETL pipeline is strucutred on AWS. Data is extracted from two s3 buckets, one for the log data and one for song info data. The raw data is then stored into two corresponding staging tables in redshift with schema for analytics tables in mind. Staging tables are then transformed  into  five analytics tables  stored in redshift.
 For the five tables, Schema follows a star schema with a fact table (songplays) for records in log data associated with song plays and Dimension tables for users of the app (users table), songs in library (songs), artists in library (artists) and timestamps of records in songplays broken down into specific units (time)
 
-## How to run the file
+## How to run 
 > python create_tables.py    # runs script for creating the tables
 
 > python etl.py              # runs script for the etl pipeline
