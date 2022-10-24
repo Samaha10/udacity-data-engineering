@@ -32,7 +32,9 @@ Dimension Tables
         artist_id, name, location, latitude, longitude
     **time**
         start_time, hour, day, week, month, year, weekday
-        
+
+![alt text](https://github.com/Samaha10/udacity-data-engineering/blob/main/Data%20Modeling%20with%20Postgres/index.png)
+
 
 ## Run 
 
