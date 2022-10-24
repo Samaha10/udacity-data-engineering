@@ -8,12 +8,16 @@ For the five tables, Schema follows a star schema with a fact table (songplays) 
 
 ## How to run the file
 > python create_tables.py    # runs script for creating the tables
+
 > python etl.py              # runs script for the etl pipeline
 
 
 ## files in repo
 >  create_tables.py :  creates tables in Redshift
+
 >  etl.py : runs the etl pipeline. loads data from S3 into staging tables on Redshift and then process that data into  analytics tables on Redshift
+
 >  sql_queries.py :   contains SQL queries for drop, create, copy and insertion of tables which will be imported into the two other files above
+
 > dwh.cfg  : configuration file for aws credentials, cluster info. and S3 buckets paths
 
